@@ -15,13 +15,13 @@ dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/Electr
 
 ### Questions:
 * What is Entity Framework?
-  * Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It eliminates the need for most of the data-access code that developers usually need to write.
+  * Entity Framework is an ORM that enables developers to work with relational data as domain-specific objects.
 * What is a Connection String?
-  * Connection strings used by the Entity Framework contain information used to connect to the underlying ADO.NET data provider that supports the Entity Framework. They also contain information about the required model and mapping files.
+  * Connection string is a string that specifies information about a data source and the means of connecting to it. It is passed in code to an underlying driver or provider in order to initiate the connection.
 * What is a Database Context?
-  * DbContext is the primary class that is responsible for interacting with the database. It is responsible for the following activities: Querying, Change Tracking, Persisting Data, Caching, Manage Relationship and Object Materialization.
+  * DbContext is a class provided by Entity Framework to establish connection to database, query the db and close connection.
 * What is a Model Repository?
-  * The Model repository is a relational database that stores the metadata for projects and folders.
+  * The Model repository is a relational database that stores the metadata for projects and folders
 * Migration vs Scaffolding?
   * 
 * Seeding the database?
