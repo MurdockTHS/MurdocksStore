@@ -1,4 +1,4 @@
-# ECommerce Project
+# Murdock Store/ Electronic Products
 
 Walkthrough from Adam Freeman's book Pro ASP.NET Core 3 
 
