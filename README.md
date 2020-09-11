@@ -23,6 +23,7 @@ dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/Electr
 * What is a Model Repository?
   * The Model repository is a relational database that stores the metadata for projects and folders
 * Migration vs Scaffolding?
-  * 
+ *   Migrations feature enables you to change the data model and deploy your changes to production by updating the database schema without having to drop and re-create the database.
+ *  Scaffolding is a code-generation framework for ASP.NET web applications that allows developers to quickly generate views and controllers based on the model present in the application.
 * Seeding the database?
-  * 
+  * Seeding a database is a process in which an initial set of data is provided to a database when it is being installed
