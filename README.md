@@ -30,4 +30,4 @@ dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/Electr
 
 
 ### Second Screenshot
-![SecondScreenshot]
+![SecondScreenshot](https://github.com/MurdockTHS/MurdocksStore/blob/master/murdock2.PNG)
