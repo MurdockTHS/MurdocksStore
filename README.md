@@ -11,7 +11,7 @@ dotnet sln MurdocksStore add MurdocksStore/ElectronicProducts.Tests
 dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/ElectronicProducts   
 
 ### First Screenshot
-![First Screenshot]()
+![First Screenshot](https://github.com/MurdockTHS/MurdocksStore/blob/master/murdocks1.PNG)
 
 ### Questions:
 * What is Entity Framework?
