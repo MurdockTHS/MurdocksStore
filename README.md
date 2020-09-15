@@ -1,5 +1,7 @@
 # Murdock Store/ Electronic Products
 
+
+
 Walkthrough from Adam Freeman's book Pro ASP.NET Core 3 
 
 dotnet new globaljson --sdk-version 3.1.101 --output MurdocksStore/ElectronicProducts  
@@ -9,6 +11,8 @@ dotnet sln MurdocksStore add MurdocksStore/ElectronicProducts
 dotnet new xunit -o MurdocksStore/ElectronicProducts.Tests --framework netcoreapp3.1  
 dotnet sln MurdocksStore add MurdocksStore/ElectronicProducts.Tests   
 dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/ElectronicProducts   
+
+# Chapter 7
 
 ### First Screenshot
 ![FirstScreenshot](https://github.com/MurdockTHS/MurdocksStore/blob/master/murdocks1.PNG)
@@ -31,3 +35,17 @@ dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/Electr
 
 ### Second Screenshot
 ![SecondScreenshot](https://github.com/MurdockTHS/MurdocksStore/blob/master/murdock2.PNG)
+
+
+# Chapter 8
+
+### Add, Filter, and highlight Category
+![Fig8-5](https://github.com/MurdockTHS/MurdocksStore/blob/master/fig8-5.PNG)
+
+### Add Shopping Cart and Session data
+![Fig8-10](https://github.com/MurdockTHS/MurdocksStore/blob/master/fig8-10.PNG)
+
+![Fig8-11](https://github.com/MurdockTHS/MurdocksStore/blob/master/fig8-11.PNG)
+
+###Test
+![testing](https://github.com/MurdockTHS/MurdocksStore/blob/master/Testing.PNG)
