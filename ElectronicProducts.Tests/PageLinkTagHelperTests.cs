@@ -8,12 +8,13 @@ using ElectronicProducts.Infrastructure;
 using ElectronicProducts.Models.ViewModels;
 using Xunit;
 
-namespace SportsStore.Tests {
+namespace ElectronicProducts.Tests {
 
     public class PageLinkTagHelperTests {
 
         [Fact]
-        public void Can_Generate_Page_Links() {
+        public void Can_Generate_Page_Links()
+        {
             // Arrange
             var urlHelper = new Mock<IUrlHelper>();
             urlHelper.SetupSequence(x => x.Action(It.IsAny<UrlActionContext>()))
@@ -26,9 +27,11 @@ namespace SportsStore.Tests {
                     f.GetUrlHelper(It.IsAny<ActionContext>()))
                         .Returns(urlHelper.Object);
 
-            PageLinkTagHelperTests helper =
-                    new PageLinkTagHelperTests(urlHelperFactory.Object) {
-                        PageModel = new PagingInfo {
+            PageLinkTagHelper helper =
+                    new PageLinkTagHelper(urlHelperFactory.Object)
+                    {
+                        PageModel = new PagingInfo
+                        {
                             CurrentPage = 2,
                             TotalItems = 28,
                             ItemsPerPage = 10
