@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ElectronicProducts.Models;
 
-namespace SportsStore.Migrations
+namespace ElectronicProducts.Migrations
 {
     [DbContext(typeof(StoreDbContext))]
     partial class StoreDbContextModelSnapshot : ModelSnapshot
@@ -18,7 +18,7 @@ namespace SportsStore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SportsStore.Models.Product", b =>
+            modelBuilder.Entity("ElectronicProducts.Models.Product", b =>
                 {
                     b.Property<long>("ProductID")
                         .ValueGeneratedOnAdd()
