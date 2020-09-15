@@ -47,5 +47,5 @@ dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/Electr
 
 ![Fig8-11](https://github.com/MurdockTHS/MurdocksStore/blob/master/fig8-11.PNG)
 
-###Test
+### Test
 ![testing](https://github.com/MurdockTHS/MurdocksStore/blob/master/Testing.PNG)
