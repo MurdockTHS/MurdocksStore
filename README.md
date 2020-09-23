@@ -49,3 +49,7 @@ dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/Electr
 
 ### Test
 ![testing](https://github.com/MurdockTHS/MurdocksStore/blob/master/Testing.PNG)
+
+# Chapter 9
+
+
