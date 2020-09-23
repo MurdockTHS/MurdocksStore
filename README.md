@@ -52,4 +52,14 @@ dotnet add MurdocksStore/ElectronicProducts.Tests reference MurdocksStore/Electr
 
 # Chapter 9
 
+### Check Out Page
+![fig9-4](https://github.com/MurdockTHS/MurdocksStore/blob/master/9-4img.PNG)
 
+### Enter Missing Fields
+![fig9-5](https://github.com/MurdockTHS/MurdocksStore/blob/master/9-5img.PNG)
+
+### Order Placed Page
+![fig9-6](https://github.com/MurdockTHS/MurdocksStore/blob/master/9-6img.PNG)
+
+### Testing
+![testingp2](https://github.com/MurdockTHS/MurdocksStore/blob/master/testingpart2.PNG)
