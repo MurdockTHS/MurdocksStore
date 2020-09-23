@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicProducts", "ElectronicProducts\ElectronicProducts.csproj", "{A36A7D45-9FFD-4E56-B4D3-CAA876B7D2A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectronicProducts", "ElectronicProducts\ElectronicProducts.csproj", "{A36A7D45-9FFD-4E56-B4D3-CAA876B7D2A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicProducts.Tests", "ElectronicProducts.Tests\ElectronicProducts.Tests.csproj", "{3651C4C2-CBF3-4000-9E70-9F4092DED94F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectronicProducts.Tests", "ElectronicProducts.Tests\ElectronicProducts.Tests.csproj", "{3651C4C2-CBF3-4000-9E70-9F4092DED94F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A36A7D45-9FFD-4E56-B4D3-CAA876B7D2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +41,11 @@ Global
 		{3651C4C2-CBF3-4000-9E70-9F4092DED94F}.Release|x64.Build.0 = Release|Any CPU
 		{3651C4C2-CBF3-4000-9E70-9F4092DED94F}.Release|x86.ActiveCfg = Release|Any CPU
 		{3651C4C2-CBF3-4000-9E70-9F4092DED94F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3D19BD5-ED83-4BFC-B26E-5323609B57A0}
 	EndGlobalSection
 EndGlobal

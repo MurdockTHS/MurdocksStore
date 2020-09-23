@@ -31,9 +31,12 @@ namespace ElectronicProducts
                     Configuration["ConnectionStrings:ElectronicProductsConnection"]);
             });
             services.AddScoped<IStoreRespository, EFStoreRepository>();
+            services.AddScoped<IOrderRepository, EFOrderRepository>();
             services.AddRazorPages();
             services.AddDistributedMemoryCache();
             services.AddSession();
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

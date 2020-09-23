@@ -1,4 +1,4 @@
-﻿using ElectronicProducts.Models;
+﻿
 using Microsoft.EntityFrameworkCore;
 
 namespace ElectronicProducts.Models
@@ -10,5 +10,6 @@ namespace ElectronicProducts.Models
             : base(options) { }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
