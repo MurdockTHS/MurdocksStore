@@ -15,7 +15,7 @@ namespace ElectronicProducts.Tests {
         [Fact]
         public void Can_Select_Categories() {
             // Arrange
-            Mock<IStoreRespository> mock = new Mock<IStoreRespository>();
+            Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
             mock.Setup(m => m.Products).Returns((new Product[] {
                 new Product {ProductID = 1, Name = "P1", Category = "Apples"},
                 new Product {ProductID = 2, Name = "P2", Category = "Apples"},
@@ -40,7 +40,7 @@ public void Indicates_Selected_Category() {
 
     // Arrange
     string categoryToSelect = "Apples";
-    Mock<IStoreRespository> mock = new Mock<IStoreRespository>();
+    Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
     mock.Setup(m => m.Products).Returns((new Product[] {
         new Product {ProductID = 1, Name = "P1", Category = "Apples"},
         new Product {ProductID = 4, Name = "P2", Category = "Oranges"},

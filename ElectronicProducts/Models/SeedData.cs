@@ -27,7 +27,7 @@ namespace ElectronicProducts.Models {
                         Category = "Gaming", Price = 220
                     },
                     new Product {
-                        Name = "Air Pod",
+                        Name = "Air Pods",
                         Description = "Truely wireless earpods made by Apple",
                         Category = "Music", Price = 199
                     },

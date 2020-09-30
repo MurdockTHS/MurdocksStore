@@ -21,7 +21,7 @@ public void Can_Load_Cart() {
     // - create a mock repository
     Product p1 = new Product { ProductID = 1, Name = "P1" };
     Product p2 = new Product { ProductID = 2, Name = "P2" };
-    Mock<IStoreRespository> mockRepo = new Mock<IStoreRespository>();
+    Mock<IStoreRepository> mockRepo = new Mock<IStoreRepository>();
     mockRepo.Setup(m => m.Products).Returns((new Product[] {
         p1, p2
     }).AsQueryable<Product>());
@@ -44,7 +44,7 @@ public void Can_Load_Cart() {
 public void Can_Update_Cart() {
     // Arrange
     // - create a mock repository
-    Mock<IStoreRespository> mockRepo = new Mock<IStoreRespository>();
+    Mock<IStoreRepository> mockRepo = new Mock<IStoreRepository>();
     mockRepo.Setup(m => m.Products).Returns((new Product[] {
         new Product { ProductID = 1, Name = "P1" }
     }).AsQueryable<Product>());

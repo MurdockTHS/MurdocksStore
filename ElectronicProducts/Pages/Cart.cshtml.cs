@@ -7,9 +7,9 @@ using System.Linq;
 namespace ElectronicProducts.Pages {
 
     public class CartModel : PageModel {
-        private IStoreRespository repository;
+        private IStoreRepository repository;
 
-        public CartModel(IStoreRespository repo, Cart cartService) {
+        public CartModel(IStoreRepository repo, Cart cartService) {
             repository = repo;
             Cart = cartService;
         }

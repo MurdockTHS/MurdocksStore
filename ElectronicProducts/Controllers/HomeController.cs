@@ -7,10 +7,10 @@ namespace ElectronicProducts.Controllers
 {
     public class HomeController : Controller
     {
-        private IStoreRespository repository;
+        private IStoreRepository repository;
         public int PageSize = 4;
 
-        public HomeController(IStoreRespository repo)
+        public HomeController(IStoreRepository repo)
         {
             repository = repo;
         }

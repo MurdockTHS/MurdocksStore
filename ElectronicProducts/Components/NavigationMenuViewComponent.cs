@@ -5,9 +5,9 @@ using ElectronicProducts.Models;
 namespace ElectronicProducts.Components {
 
     public class NavigationMenuViewComponent : ViewComponent {
-        private IStoreRespository repository;
+        private IStoreRepository repository;
 
-        public NavigationMenuViewComponent(IStoreRespository repo) {
+        public NavigationMenuViewComponent(IStoreRepository repo) {
             repository = repo;
         }
 

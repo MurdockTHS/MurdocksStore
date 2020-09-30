@@ -1,17 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ElectronicProducts.Models;
 using System.Linq;
+
 namespace ElectronicProducts.Controllers {
+
     public class OrderController : Controller
     {
         private IOrderRepository repository;
         private Cart cart;
+
         public OrderController(IOrderRepository repoService, Cart cartService)
         {
             repository = repoService;
             cart = cartService;
         }
         public ViewResult Checkout() => View(new Order());
+
         [HttpPost]
         public IActionResult Checkout(Order order)
         {

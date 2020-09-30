@@ -30,13 +30,14 @@ namespace ElectronicProducts
                 opts.UseSqlServer(
                     Configuration["ConnectionStrings:ElectronicProductsConnection"]);
             });
-            services.AddScoped<IStoreRespository, EFStoreRepository>();
+            services.AddScoped<IStoreRepository, EFStoreRepository>();
             services.AddScoped<IOrderRepository, EFOrderRepository>();
             services.AddRazorPages();
             services.AddDistributedMemoryCache();
             services.AddSession();
             services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddServerSideBlazor();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -62,6 +63,8 @@ namespace ElectronicProducts
                     new { Controller = "Home", action = "Index", productPage = 1 });
                 endpoints.MapDefaultControllerRoute();
                 endpoints.MapRazorPages();
+                endpoints.MapBlazorHub();
+                endpoints.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
             });
 
             SeedData.EnsurePopulated(app);

@@ -16,7 +16,7 @@ namespace ElectronicProducts.Tests {
         public void Can_Use_Repository()
         {
             // Arrange
-            Mock<IStoreRespository> mock = new Mock<IStoreRespository>();
+            Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
             mock.Setup(m => m.Products).Returns((new Product[] {
                 new Product {ProductID = 1, Name = "P1"},
                 new Product {ProductID = 2, Name = "P2"}
@@ -39,7 +39,7 @@ namespace ElectronicProducts.Tests {
         public void Can_Paginate()
         {
             // Arrange
-            Mock<IStoreRespository> mock = new Mock<IStoreRespository>();
+            Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
             mock.Setup(m => m.Products).Returns((new Product[] {
                 new Product {ProductID = 1, Name = "P1"},
                 new Product {ProductID = 2, Name = "P2"},
@@ -68,7 +68,7 @@ namespace ElectronicProducts.Tests {
         {
 
             // Arrange
-            Mock<IStoreRespository> mock = new Mock<IStoreRespository>();
+            Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
             mock.Setup(m => m.Products).Returns((new Product[] {
                 new Product {ProductID = 1, Name = "P1"},
                 new Product {ProductID = 2, Name = "P2"},
@@ -99,7 +99,7 @@ namespace ElectronicProducts.Tests {
 
             // Arrange
             // - create the mock repository
-            Mock<IStoreRespository> mock = new Mock<IStoreRespository>();
+            Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
             mock.Setup(m => m.Products).Returns((new Product[] {
                 new Product {ProductID = 1, Name = "P1", Category = "Cat1"},
                 new Product {ProductID = 2, Name = "P2", Category = "Cat2"},
@@ -127,7 +127,7 @@ namespace ElectronicProducts.Tests {
         public void Generate_Category_Specific_Product_Count()
         {
             // Arrange
-            Mock<IStoreRespository> mock = new Mock<IStoreRespository>();
+            Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
             mock.Setup(m => m.Products).Returns((new Product[] {
                 new Product {ProductID = 1, Name = "P1", Category = "Cat1"},
                 new Product {ProductID = 2, Name = "P2", Category = "Cat2"},
